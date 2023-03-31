@@ -1,0 +1,22 @@
+/* 1rem = 16px */
+
+/* 768 px tablet Screen*/
+@media (max-width: 48em), (max-width: 40.5em) {
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 27%);
+  }
+}
+
+/* 632 px */
+@media (max-width: 39.5em) {
+  #board {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.65fr;
+    gap: 4.2rem;
+  }
+  .mainBox {
+    padding-top: 0;
+  }
+}

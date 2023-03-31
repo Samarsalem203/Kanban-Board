@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(19, 155, 121);
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: center;
+  gap: 2.2rem;
+  padding: 1.2rem 1.2rem;
+  margin: 4.2rem auto;
+}
+h1,
+h3,
+.addBtn {
+  color: #f0f3f0;
+}
+h1 {
+  text-align: center;
+  margin: 1.4rem;
+}
+h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.mainBox {
+  padding-top: 1rem;
+}
+.taskInput {
+  outline: 0;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+.hide {
+  display: none;
+}
+.taskBox {
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 0.4rem;
+  /* display: none; */
+  cursor: move;
+}
+.reStyleTaskBox {
+  background-color: #fff;
+  padding: 0.5rem;
+}
+/* .task {
+  position: relative;
+  background-color: #f0f3f0;
+  padding: 0.4rem 0 0.4rem 0.2rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  word-wrap: break-word;
+  cursor: pointer;
+} */
+.dragging {
+  opacity: 0.5;
+}
+#icons {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+}
+
+.addBtn,
+.taskInput {
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.4rem 0;
+  border-radius: 5px;
+}
+
+.addBtn {
+  background-color: rgb(18, 121, 95);
+}
+.addBtn:hover {
+  background-color: rgb(21, 112, 91);
+}
+.updateBtn {
+  color: rgb(19, 155, 121, 0.5);
+  right: 10%;
+}
+.updateBtn,
+.del-btn {
+  position: absolute;
+  top: 0;
+}
+.del-btn {
+  color: rgb(216, 34, 34, 0.5);
+  right: 3%;
+}
+
+.del-btn:hover {
+  color: rgb(187, 27, 27);
+}
+.updateBtn {
+  color: rgb(19, 155, 121, 0.5);
+}
+.updateBtn:hover {
+  color: rgb(15, 121, 94);
+}
+.delIcon,
+.upIcon {
+  cursor: pointer;
+}
+.borderDeleteinput {
+  border: 2px solid rgb(216, 34, 34, 0.7);
+}
+.borderUpdateInput {
+  border: 2px solid rgb(12, 201, 153);
+  /* width: 100%;
+  padding: 0.5rem 0;
+  outline: none;
+  border-radius: 5px; */
+}
+.updateTaskBtn {
+  background-color: rgb(12, 201, 153);
+  color: #f0f3f0;
+  border: none;
+  padding: 0.4rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
